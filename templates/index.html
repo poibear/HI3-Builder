@@ -1,5 +1,72 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Stackable - Honkai Impact 3rd
+    Honkai Impact 3rd Builder
+{% endblock %}
+
+{% block main %}
+<section>
+    <div id="hook-panel">
+        <div class="left">
+            <!-- <img src="{{ url_for('static', filename='images/hero.png') }}"> -->
+        </div>
+        <div class="right">
+            <h1 class="outfit-700">The most powerful character builds, optimized at your fingertips</h1>
+            <h3 id="outfit-500">
+                Discover your party's potential with our AI model trained on
+                a multitude of characters' optimal build and their skills.
+            </h3>
+        </div>
+    </div>
+</section>
+<main>
+    <form action="" method="get" class="builder-form">
+        <div id="character-info"> <!--make this inline or flexbox-->
+            <div class="character-detail">
+                <label>Battlesuit Name</label>
+                <input type="text" id="battlesuit-name" name="battlesuit-name" required minlength="5" />
+            </div>
+            <div class="character-detail">
+                <label>Default Rank</label>
+                <select name="default-rank" id="default-rank">
+                    <option value="" disabled>Select A Valid Option</option>
+                    <option value="a">A</option>
+                    <option value="s">S</option>
+                </select>
+            </div>
+            <div class="character-detail">
+                <label>Battlesuit Type</label>
+                <select name="battlesuit" id="battlesuit">
+                    <option value="" disabled>Select A Valid Option</option>
+                    <option value="mech">Mecha</option>
+                    <option value="bio">Biologic</option>
+                    <option value="psy">Psychic</option>
+                    <option value="ima">Imaginary</option>
+                    <option value="qua">Quantum</option>
+                    <option value="star">Stardust</option>
+                </select>
+            </div>
+            <div class="character-detail">
+                <label>Damage Type</label>
+                <select name="dmg-type" id="dmg-type">
+                    <option value="" disabled>Select A Valid Option</option>
+                    <option value="phys">Physical</option>
+                    <option value="fire">Fire</option>
+                    <option value="ice">Ice</option>
+                    <option value="ligh">Lightning</option>
+                </select>
+            </div>
+            <div class="character-detail">
+                <label>Desired Role</label>
+                <select name="optimal-role" id="optimal-role">
+                    <option value="" disabled>Select A Valid Option</option>
+                    <option value="dps">DPS</option>
+                    <option value="sup">Support</option>
+                    <option value="both">Both</option>
+                </select>
+            </div>
+        </div>
+        <input type="submit" value="Get Build" />
+    </form>
+</main>
 {% endblock %}

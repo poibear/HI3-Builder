@@ -1,0 +1,104 @@
+:root {
+    --bg-color: #100625;
+    --fg-dark: #100625;
+    --fg-color: #6A5ACD;
+}
+
+* {
+    font-family: "Outfit", serif;
+    font-optimal-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    color: white;
+}
+
+body {
+    margin: 0;
+
+    min-height: 100vh;
+
+    background: var(--bg-color);
+}
+
+a:hover {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+
+    color: var(--fg-color);
+}
+
+button {
+    background: transparent;
+
+    border-style: none;
+}
+
+button a {
+    text-decoration: none;
+}
+
+select {
+    background: var(--fg-dark);
+
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+select option {
+    color: white;
+}
+
+input {
+    color: black;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+#home-logo a {
+    font-size: 2em;
+    font-weight: 800; 
+    text-decoration: none;
+}
+
+#home-logo a:hover {
+    color: white;
+}
+
+.outfit-100 {
+    font-weight: 100;
+}
+
+.outfit-200 {
+    font-weight: 200;
+}
+
+.outfit-300 {
+    font-weight: 3200;
+}
+
+.outfit-400 {
+    font-weight: 400;
+}
+
+.outfit-500 {
+    font-weight: 500;
+}
+
+.outfit-600 {
+    font-weight: 600;
+}
+
+.outfit-700 {
+    font-weight: 700;
+}
+
+.outfit-800 {
+    font-weight: 800;
+}
+
+.outfit-900 {
+    font-weight: 900;
+}

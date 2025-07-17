@@ -9,10 +9,7 @@
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lato:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <!--end of fonts-->
     {% block style %}
     {% endblock %}
@@ -21,11 +18,11 @@
     <div id="wrapper">
         <nav>
             <div id="nav-flex-links">
-                <a href="/"><img class="logo" src="{{ url_for('static', filename='images/logo.png') }}" width="208" height="117" alt="AnxietySense Logo"></a>
+                <span id="home-logo"><a href="/">HI3 Builder</a></span>
                 <div class="nav-btn-group">
-                    <button class="nav-pill-btn"><a href="/">Home</a></button>
-                    <button class="nav-pill-btn"><a href="faq">FAQ</a></button>
-                    <button class="nav-pill-btn"><a href="contact">Contact</a></button>
+                    <button class="nav-btn"><a href="/">Home</a></button>
+                    <button class="nav-btn"><a href="faq">FAQ</a></button>
+                    <button class="nav-btn"><a href="contact">Contact</a></button>
                 </div>            
             </div>
         </nav>
