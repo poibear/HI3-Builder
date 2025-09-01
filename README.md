@@ -15,12 +15,12 @@ The Honkai Impact 3rd Builder (HI3 Builder) provides optimized build setups for 
    ```bash
    git clone https://github.com/poibear/HI3-Builder
    ```
+> [!TIP]
+> It is recommended to create a virtual environment for the project (especially for PyTorch) when installing libraries
 2. Open the repository and install the required libraries
    ```bash
    pip install -r requirements.txt
    ```
-    > [!TIP]
-    > It is recommended to create a virtual environment for the project (especially for PyTorch) when installing libraries
 3. Run `app.py` and navigate to [127.0.0.1:8080](127.0.0.1:8080)
 
 # How It Works
